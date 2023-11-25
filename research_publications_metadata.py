@@ -19,7 +19,7 @@ def generate_pdf(researcher_name, project_name, join_date, fill_date, publicatio
     buffer = BytesIO()
     pdf = canvas.Canvas(buffer, pagesize=letter)
 
-    pdf.setTitle("Research Dissemination Logbook")
+    pdf.setTitle("Research Dissemination Metadata")
     pdf.drawString(100, 750, "Research Logbook")
     pdf.drawString(100, 730, f"Researcher's Name: {researcher_name}")
     pdf.drawString(100, 710, f"Project: {project_name}")
